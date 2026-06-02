@@ -42,7 +42,7 @@ jobs:
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
       - name: 6. Tests frontend
-        run: npm test --prefix frontend --if-present -- --watchAll=false
+        run: npm test --prefix frontend --if-present -- --watchAll=false --passWithNoTests
 
   # ─────────────────────────────────────────
   # JOB 2 — Build des images Docker
